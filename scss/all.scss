@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-size: 24px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 客製 start */ 
+
+$bg-color: #415165;
+$eng-color: #A00404;
+$sec-color: #96A9C4;
+
+::selection{
+	background-color: $sec-color;
+	color: #fff;
+}
+
+a{
+	display: block;
+	text-decoration: none;
+}
+
+img{
+	display: block;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+h1{
+	font-size: 80px;
+	line-height: 94px;
+	font-weight: 500;
+	padding: 48px 0 18px;
+	border-bottom: 2px solid #000;
+}
+
+.headshot{
+	margin: 48px 0;
+}
+
+.item{
+	margin-bottom: 72px;
+}
+
+h2{
+	display: flex;
+	align-items: center;
+	font-size: 32px;
+	line-height: 43px;
+	font-weight: bold;
+	padding-bottom: 8px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid #000;
+	span{
+		font-size: 24px;
+		color: $eng-color;
+		line-height: 28px;
+		margin-left: 16px;
+	}
+}
+
+.list{
+	line-height: 36px;
+	li+li{
+		margin-top: 24px;
+	}
+}
+
+.bgBlue{
+	padding: 36px 0;
+	color: #fff;
+	text-align: center;
+	background-color: $bg-color;
+	h2,
+	span{
+		color: #fff;
+	}
+	h2{
+		margin-bottom: 40px;
+		justify-content: center;
+		border-bottom-color: #fff;
+		
+	}
+}
+
+.wrap{
+	padding: 0 102px;
+	box-sizing: border-box;
+}
+
+.skillList{
+	display: inline-block;
+	text-align: left;
+	padding-left: 20px;
+	border-left: 1px solid $sec-color;
+	li+li{
+		margin-top: 22px;
+	}
+}
+
+.workList{
+	border-left: 1px solid $sec-color;
+	padding-left: 24px;
+	margin-left: 24px;
+	h3{
+		font-weight: 600;
+	}
+	img{
+		padding: 8px 0;
+	}
+	p{
+		width: 642px;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: justify;
+	}
+}
+
+.contactList{
+	li{
+		display: flex;
+		justify-content: center;
+		&:last-child a:hover{
+			opacity: .6;
+			transition: .6s;
+		}
+	}
+	a{
+		color: #fff;
+		&:hover{
+			text-decoration: line-through;
+		}
+	}
+	a+a{
+		margin-left: 24px;
+	}
+}

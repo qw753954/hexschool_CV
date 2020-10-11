@@ -154,7 +154,7 @@ img {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px; 
     margin: 0 auto;
 }
 
@@ -215,8 +215,8 @@ h2 {
 }
 
 .wrap {
-    padding: 0 102px;
-    box-sizing: border-box;
+    max-width: 996px;
+    margin: 0 auto;
 }
 
 .skillList {
@@ -240,7 +240,7 @@ h2 {
         padding: 8px 0;
     }
     p {
-        width: 642px;
+        max-width: 642px;
         font-size: 20px;
         line-height: 30px;
         text-align: justify;

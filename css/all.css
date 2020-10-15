@@ -106,7 +106,7 @@ section {
 body {
   line-height: 1;
   font-size: 24px;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
 }
 
 ol,

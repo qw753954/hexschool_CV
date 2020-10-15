@@ -161,7 +161,7 @@ h1 {
 }
 
 .headshot {
-  margin: 48px 0;
+  padding: 48px 0;
 }
 
 .item {
@@ -248,6 +248,9 @@ h2 span {
 .contactList li:last-child a:hover {
   opacity: 0.6;
   transition: 0.6s;
+}
+.contactList li + li {
+  margin-top: 16px;
 }
 .contactList a {
   color: #fff;

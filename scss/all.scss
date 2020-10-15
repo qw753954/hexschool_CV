@@ -139,6 +139,7 @@ table {
 $bg-color: #415165;
 $eng-color: #A00404;
 $sec-color: #96A9C4;
+
 ::selection {
     background-color: $sec-color;
     color: #fff;
@@ -167,7 +168,7 @@ h1 {
 }
 
 .headshot {
-    margin: 48px 0;
+    padding: 48px 0;
 }
 
 .item {
@@ -255,6 +256,9 @@ h2 {
             opacity: .6;
             transition: .6s;
         }
+    }
+    li+li {
+        margin-top: 16px;
     }
     a {
         color: #fff;

@@ -139,7 +139,6 @@ table {
 $bg-color: #415165;
 $eng-color: #A00404;
 $sec-color: #96A9C4;
-
 ::selection {
     background-color: $sec-color;
     color: #fff;
@@ -155,7 +154,7 @@ img {
 }
 
 .container {
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: 0 auto;
 }
 
